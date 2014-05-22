@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="title" content="Welcome" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<title>{{ page_title }} - {{ site_title }}</title>
+<link rel="stylesheet" type="text/css" media="screen" href="/css/default.css" />
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+</head>
+<body>
+<div class="wrap">
+ <div class="headerwrap">
+  <div class="header">
+   <div class="logo"></div>
+   <ul class="main-navigation">
+    {{# main_navigation}}
+    <li><a href="{{ link }}">{{ text }}</a></li>
+    {{/ main_navigation }}
+   </ul>
+  </div>
+ </div>
